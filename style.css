@@ -1,0 +1,44 @@
+body{
+    background-color: cornflowerblue;
+    color: white;
+}
+nav{
+    text-align: center; 
+}
+
+nav a{
+    font-size: 28px;
+    text-decoration: none;
+    color: aliceblue;
+    font-weight: bold;
+}
+a:hover{
+    background-color: rgb(172, 206, 228);
+}
+h1{
+    font-size: 36px;
+}
+h2{
+    font-size: 36px;
+}
+p{
+    font-size: 30px;
+
+}
+div img{
+    border: solid rgb(37, 66, 129) 10px;
+    border-radius: 16px;
+}
+small{
+    font-size: 20px;
+    text-decoration: none;
+}
+div a {
+    color: white;
+    font-size: 20px;
+    text-decoration: none;
+}
+img{
+    border: solid rgb(37, 66, 129) 10px;
+    border-radius: 16px;
+}

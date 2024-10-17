@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="Pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Arduino e tinkercad</title>
+</head>
+<body>
+    <br>
+    <nav>
+     <a href="./index.html">Arduino e tinkercad  </a>
+     <a href="./Tinkercad.html">Semaforo simples Tinkercad  </a>
+    <a href="./Arduino.html">Semaforo simples Arduíno  </a>
+    <a href="./tikercadd.html">Semaforo duplo Tinkercad  </a>
+    <a href="./arduinoo.html">semaforo duplo Arduino  </a>
+    <a href="./crescente.html">Contador crescente de 0 à 9  </a>
+    <a href="./decrescente.html">Contador crescente de 9 à 0  </a>
+    <a href="semaforo.html">Contador decrescente de 9 à 0 com SEMÁFORO DUPLO  </a>
+    </nav>
+    <br>
+    <h1>Semaforo duplo em arduino</h1>
+    <br>
+    <div>
+        <img src="na_pratica.jpg" alt="">
+    </div>
+    <br>
+    <div class="video"><iframe width="987" height="557" src="https://www.youtube.com/embed/u7lAJRHsd2k" title="" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></div>
+    <h3>Abaixo terá os codigos em C++, em duas formas diferentes, em imagem e em texto</h3>
+   <br>
+   <div>
+    <img src="C++ DUPLO.jpg" alt="">
+   </div>
+    <br>
+    <pre>// C++ code
+        //
+        void setup()
+        {
+          pinMode(8, OUTPUT);
+          pinMode(13, OUTPUT);
+          pinMode(12, OUTPUT);
+          pinMode(10, OUTPUT);
+          pinMode(11, OUTPUT);
+          pinMode(9, OUTPUT);
+        }
+        
+        void loop()
+        {
+          digitalWrite(8, HIGH);
+          digitalWrite(13, HIGH);
+          delay(9000); // Wait for 9000 millisecond(s)
+          digitalWrite(13, LOW);
+          digitalWrite(12, HIGH);
+          delay(2000); // Wait for 2000 millisecond(s)
+          digitalWrite(8, LOW);
+          digitalWrite(12, LOW);
+          digitalWrite(10, HIGH);
+          digitalWrite(11, HIGH);
+          delay(7000); // Wait for 7000 millisecond(s)
+          digitalWrite(10, LOW);
+          digitalWrite(9, HIGH);
+          delay(2000); // Wait for 2000 millisecond(s)
+          digitalWrite(11, LOW);
+          digitalWrite(9, LOW);
+        }</pre>
+</body>
+</html>

@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="Pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Arduino e tinkercad</title>
+</head>
+<body>
+    <br>
+    <nav>
+        <a href="./index.html">Arduino e tinkercad  </a>
+        <a href="./Tinkercad.html">Semaforo simples Tinkercad  </a>
+       <a href="./Arduino.html">Semaforo simples Arduíno  </a>
+       <a href="./tikercadd.html">Semaforo duplo Tinkercad  </a>
+       <a href="./arduinoo.html">semaforo duplo Arduino  </a>
+       <a href="./crescente.html">Contador crescente de 0 à 9  </a>
+       <a href="./decrescente.html">Contador crescente de 9 à 0  </a>
+       <a href="semaforo.html">Contador decrescente de 9 à 0 com SEMÁFORO DUPLO  </a>
+    </nav>
+    <br>
+    <h1>Atividade com os números decrescente</h1>
+    <br>
+    <div>
+        <img src="decrescente.jpg" alt="">
+    </div>
+    <br>
+    <pre>// C++ code
+        //
+        void setup()
+        {
+          pinMode(2, OUTPUT);
+          pinMode(3, OUTPUT);
+          pinMode(4, OUTPUT);
+          pinMode(5, OUTPUT);
+          pinMode(6, OUTPUT);
+          pinMode(7, OUTPUT);
+          pinMode(8, OUTPUT);
+        }
+        
+        void loop()
+        {
+          digitalWrite(2, HIGH);
+          digitalWrite(3, HIGH);
+          digitalWrite(4, HIGH);
+          digitalWrite(5, LOW);
+          digitalWrite(6, LOW);
+          digitalWrite(7, HIGH);
+          digitalWrite(8, HIGH);
+          delay(1000); // Wait for 1000 millisecond(s)
+          digitalWrite(2, HIGH);
+          digitalWrite(3, HIGH);
+          digitalWrite(4, HIGH);
+          digitalWrite(5, HIGH);
+          digitalWrite(6, HIGH);
+          digitalWrite(7, HIGH);
+          digitalWrite(8, HIGH);
+          delay(1000); // Wait for 1000 millisecond(s)
+          digitalWrite(2, HIGH);
+          digitalWrite(3, HIGH);
+          digitalWrite(4, HIGH);
+          digitalWrite(5, LOW);
+          digitalWrite(6, LOW);
+          digitalWrite(7, LOW);
+          digitalWrite(8, LOW);
+          delay(1000); // Wait for 1000 millisecond(s)
+          digitalWrite(2, HIGH);
+          digitalWrite(3, LOW);
+          digitalWrite(4, HIGH);
+          digitalWrite(5, HIGH);
+          digitalWrite(6, HIGH);
+          digitalWrite(7, HIGH);
+          digitalWrite(8, HIGH);
+          delay(1000); // Wait for 1000 millisecond(s)
+          digitalWrite(2, HIGH);
+          digitalWrite(3, LOW);
+          digitalWrite(4, HIGH);
+          digitalWrite(5, HIGH);
+          digitalWrite(6, LOW);
+          digitalWrite(7, HIGH);
+          digitalWrite(8, HIGH);
+          delay(1000); // Wait for 1000 millisecond(s)
+          digitalWrite(2, LOW);
+          digitalWrite(3, HIGH);
+          digitalWrite(4, HIGH);
+          digitalWrite(5, LOW);
+          digitalWrite(6, LOW);
+          digitalWrite(7, HIGH);
+          digitalWrite(8, HIGH);
+          delay(1000); // Wait for 1000 millisecond(s)
+          digitalWrite(2, HIGH);
+          digitalWrite(3, HIGH);
+          digitalWrite(4, HIGH);
+          digitalWrite(5, HIGH);
+          digitalWrite(6, LOW);
+          digitalWrite(7, LOW);
+          digitalWrite(8, HIGH);
+          delay(1000); // Wait for 1000 millisecond(s)
+          digitalWrite(2, HIGH);
+          digitalWrite(3, HIGH);
+          digitalWrite(4, LOW);
+          digitalWrite(5, HIGH);
+          digitalWrite(6, HIGH);
+          digitalWrite(7, LOW);
+          digitalWrite(8, HIGH);
+          delay(1000); // Wait for 1000 millisecond(s)
+          digitalWrite(2, LOW);
+          digitalWrite(3, HIGH);
+          digitalWrite(4, HIGH);
+          digitalWrite(5, LOW);
+          digitalWrite(6, LOW);
+          digitalWrite(7, LOW);
+          digitalWrite(8, LOW);
+          delay(1000); // Wait for 1000 millisecond(s)
+          digitalWrite(2, HIGH);
+          digitalWrite(3, HIGH);
+          digitalWrite(4, HIGH);
+          digitalWrite(5, HIGH);
+          digitalWrite(6, HIGH);
+          digitalWrite(7, HIGH);
+          digitalWrite(8, LOW);
+          delay(1000); // Wait for 1000 millisecond(s)
+        }</pre>

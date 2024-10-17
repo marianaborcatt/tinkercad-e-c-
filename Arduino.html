@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="Pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Arduino e tinkercad</title>
+</head>
+<body>
+    <br>
+    <nav>
+        <a href="./index.html">Arduino e tinkercad  </a>
+        <a href="./Tinkercad.html">Semaforo simples Tinkercad  </a>
+       <a href="./Arduino.html">Semaforo simples Arduíno  </a>
+       <a href="./tikercadd.html">Semaforo duplo Tinkercad  </a>
+       <a href="./arduinoo.html">semaforo duplo Arduino  </a>
+       <a href="./crescente.html">Contador crescente de 0 à 9  </a>
+       <a href="./decrescente.html">Contador crescente de 9 à 0  </a>
+       <a href="semaforo.html">Contador decrescente de 9 à 0 com SEMÁFORO DUPLO  </a>
+    </nav>
+    <h1>Semaforo simples Arduíno</h1>
+   <br>
+   <p>Abaixo terá uma imagem de uma aula pratica, onde a gente fex o semaforo simples</p>
+   <br>
+   <div>
+    <img src="foto_simples.jpg" alt="">
+   </div>
+   <br>
+   <div class="video">
+    <iframe width="381" height="677" src="https://www.youtube.com/embed/LYPVItfhYzM" title="atividade pratica (leds)" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+   </div>
+   <br>
+   <h3>Abaixo terá os codigos em C++, em duas formas diferentes, em imagem e em texto</h3>
+   <br>
+   <div>
+    <img src="simples_c++.jpg" alt="">
+   </div>
+    <br>
+<pre>int para_sempre = 0;
+
+    int contador = 0;
+    
+    int counter;
+    
+    void setup()
+    {
+      pinMode(12, OUTPUT);
+      pinMode(4, OUTPUT);
+      pinMode(8, OUTPUT);
+    
+      i = 3;
+    }
+    
+    void loop()
+    {
+      for (counter = 0; counter < 2; ++counter) {
+        digitalWrite(12, HIGH);
+        delay(7000); // Wait for 7000 millisecond(s)
+        digitalWrite(12, LOW);
+        delay(1); // Wait for 1 millisecond(s)
+        digitalWrite(4, HIGH);
+        delay(5000); // Wait for 5000 millisecond(s)
+        digitalWrite(4, LOW);
+        delay(1); // Wait for 1 millisecond(s)
+        digitalWrite(8, HIGH);
+        delay(1000); // Wait for 1000 millisecond(s)
+        digitalWrite(8, LOW);
+        delay(1); // Wait for 1 millisecond(s)
+      }
+      while (i > 1) {
+        digitalWrite(8, HIGH);
+        delay(1000); // Wait for 1000 millisecond(s)
+        digitalWrite(8, LOW);
+        delay(1000); // Wait for 1000 millisecond(s)
+      }
+    }</pre>
+</body>
+</html>
